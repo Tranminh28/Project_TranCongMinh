@@ -413,6 +413,131 @@ width: 50%;
   display: block;
   width: 100%;
 }
+.some{
+  display: flex;
+}
+.some-item{
+  float: left;
+  width: calc(100%/4);
+}
+.icon img{
+  margin: 12px;
+}
+.people{
+  background-image:linear-gradient(0deg, rgba(241, 241, 241, 0.86), rgba(241, 241, 241, 0.86)),url(../img/banner2.png);
+  height: 500px;
+  background-size: cover;
+}
+.people-item{
+  float: left;
+  margin: 0px 0px 45px 0px;
+  width: calc(100%/2);
+  padding: 30px 0px 1px 11px;
+  line-height: 20px;
+}
+.people-item img{
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 14px;
+}
+.people-item .gach2{
+  width: 100px;
+  height: 5px;
+  background:red;
+  margin: 0px 126px;
+}
+.latest{
+  clear: both;
+}
+.bottom-latest{
+  width: 100%;
+  height: 1px;
+  background:#999999;
+}
+.latest-item1{
+  width: calc(100%/3);
+  float: left;
+  padding: 20px;
+  position: relative;
+}
+.latest-item1 p{
+ margin: 10px;
+ color:#999999;
+}
+.latest-item1 i{
+  color:#95e1d3;
+ }
+ .latest-item1 a{
+  color:#999999;
+ }
+.date{
+  position: absolute;
+  background:#95e1d3;
+  color: white;
+  width:60px;
+  height: 60px;
+  text-align: center;
+  bottom: 177px;
+  left: 0;
+}
+.map{
+  clear: both;
+  background-image:linear-gradient(0deg, rgba(241, 241, 241, 0.86), rgba(241, 241, 241, 0.86)),url(../img/banner2.png);
+  height: 200px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: red;
+  line-height: 40px;
+}
+.map i{
+  color: red;
+}
+.map-gach{
+  width: 100px;
+  height: 5px;
+  background:red;
+}
+.mogo{
+
+}
+.mogoitem{
+  width: calc(100%/3);
+  float: left;
+}
+.mogo-item1 ul li{
+  display: inline-block;
+
+}
+.mogo-item1{
+  line-height: 25px;
+
+}
+.mogo-item1 h1,.mogo-item1 p{
+ color: #999999;
+}
+
+.mogo-item1 i{
+  color: #1abc9c;
+
+}
+.mogo-item1 input{
+  background:white;
+  background:none;
+  outline: none;
+
+}
+.mogo-item1 a{
+  background:#1abc9c;
+  border: 1px solid #1abc9c;
+  color: white;
+  text-transform: uppercase;
+
+}
+
 
 
   

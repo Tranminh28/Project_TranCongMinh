@@ -136,7 +136,10 @@ nav ul li:hover a {
     display: flex;
     flex-direction: column;
     text-align: center;
-    line-height: 40px;
+   
+}
+.story-item-1{
+  line-height: 50px;
 }
 .story p{
     font-family: 'Kaushan Script', cursive;
@@ -269,6 +272,7 @@ height: 256px;
 .box1{
     display: flex;
     justify-content: space-between;
+    padding: 40px 0px;
 }
 
 .item-img{
@@ -316,7 +320,7 @@ width: 50%;
   }
   
   input[type="checkbox"]:checked + .collapse-content {
-    height: 120px;
+    height: 160px;
   }
   
   .collapse-content > div {
@@ -340,8 +344,75 @@ width: 50%;
     border-radius: 10px;
     background-color: #95e1d3;
   }
-  
+  .sms-item{
+    display: flex;
+    margin: 50px;
+    padding: 15px;
+    position:relative;
 
+  }
+
+  .sms-item i{
+    border: 1px solid greenyellow;
+    padding: 30px;
+    font-size: 60px;
+    color:greenyellow ;
+  
+}
+
+  .sms{
+    width: 100%;
+    margin: auto;
+    background: #fcf7f7;
+  }
+  .sms1{
+    margin: 16px;
+  }
+  .gach2-1{
+    width: 50px;
+    height: 5px;
+    background: red;
+    margin: 5px;
+  }
+  .muiten .trai{
+    left: -11px;
+    position: absolute;
+    bottom: 70px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .muiten .phai{
+    right: -11px;
+    position: absolute;
+    bottom: 70px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .gach21{
+    display: flex;
+  }
+  .sms1 p{
+    color: rgb(197, 188, 188);
+    font-weight: bold;
+  }
+.icon-fas ul li {
+  display: inline-block;
+}
+.logo{
+  background:#f8f8f8;
+  display: flex;
+}
+.logo-item{
+    width: calc(100%/6);
+    float: left;
+    margin: 0px;
+    text-align: center;
+    padding: 20px;
+}
+.logo img{
+  display: block;
+  width: 100%;
+}
 
 
   

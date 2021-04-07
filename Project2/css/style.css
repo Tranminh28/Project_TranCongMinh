@@ -49,6 +49,7 @@ nav{
 }
 nav a{
     font-family: 'Montserrat', sans-serif;
+    color: var(--trang);
 }
 nav ul li:hover a {
     color: var(--vang);
@@ -85,7 +86,7 @@ nav ul li:hover a {
     top:0;
     left: 0;
     right: 0;
-    bottom: 200px;
+    bottom: 140px;
     align-items: center;
     justify-content: center;
     display:flex;
@@ -95,7 +96,7 @@ nav ul li:hover a {
     height: 50px;
     margin:auto;
     position: absolute;
-    top:550px;
+    top:440px;
     left: 0;
     right: 0;
     bottom: 0px;
@@ -141,7 +142,7 @@ nav ul li:hover a {
 .story-item-1{
   line-height: 50px;
 }
-.story p{
+.story-item p{
     font-family: 'Kaushan Script', cursive;
 }
 .gach-1{
@@ -202,9 +203,21 @@ img {
     transition: 0.4s;
 
   }
+
   
   .team-item:hover .content > div {
     opacity: 1;
+  }
+  .team-item .content ul {
+    color: red;
+    background: rgb(223, 219, 20);
+    font-size: 30px;
+    border: none;
+  }
+  .team-item:hover .content ul li{
+    
+    color: white;
+  
   }
   
   .team-item:hover .content {
@@ -266,7 +279,7 @@ left: 38%;
 .img-2{
 position: absolute;
 top: 300px;
-left: 59%;
+left: 56%;
 height: 256px;
 }
 .box1{
@@ -320,7 +333,7 @@ width: 50%;
   }
   
   input[type="checkbox"]:checked + .collapse-content {
-    height: 160px;
+    height: 155px;
   }
   
   .collapse-content > div {
@@ -501,12 +514,12 @@ width: 50%;
   height: 5px;
   background:red;
 }
-.mogo{
 
-}
 .mogoitem{
   width: calc(100%/3);
   float: left;
+  border-bottom: 2px solid #999999;
+  height: 320px;
 }
 .mogo-item1 ul li{
   display: inline-block;
@@ -535,9 +548,32 @@ width: 50%;
   border: 1px solid #1abc9c;
   color: white;
   text-transform: uppercase;
-
+}
+.mogo-item2 p{
+  color: var(--den);
+}
+.mogo-item2 span{
+  color: #999999;
+}
+.blogsb{
+margin: 5px;
+}
+.item-blocgs{
+  display: flex;
+  margin: 6px 0px;
 }
 
 
+.list-item{
+  width: calc(100%/3);
+  float: left;
+  padding: 4px;
+}
+
+.end p{
+  text-align: center;
+  color: #7a7a7a;
+  font-size: 20px;
+}
 
   

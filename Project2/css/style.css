@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,500;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');    
 :root {
     --xam: #2c3e50;
     --trang: white;
@@ -20,6 +21,7 @@ ul li {
 }
 a {
     text-decoration: none;
+    color: white;
 }
 nav ul li {
     display: inline-block;
@@ -30,37 +32,48 @@ nav ul li {
     margin: auto;
 }
 .banner {
-    height: 100vh;
+    height: 600px;
     background-image: linear-gradient(rgba(240, 150, 232, 0.7), rgba(219, 221, 86, 0.7)),
-        url(../img/picture.png);
+        url(/Project2/img/banner2.png);
     background-size: cover;
     color: var(--trang);
     padding: 10px;
     position: relative;
 }
-nav {
-    float: right;
+.welcome button {
+    padding: 15px 25px;
+    border: 4px solid white;
+    background: transparent;
+    font-size: 15px;
+    margin: 15px auto;
+    outline: none;
+    color: white;
 }
-.banner h1 {
-    float: left;
+.menu{
+display: flex;
+justify-content: space-between;
+font-family: 'Montserrat', sans-serif;
 }
-nav a {
+.menu>a{
+    font-size: 26px;
     font-family: 'Montserrat', sans-serif;
-    color: var(--trang);
+   
 }
-nav ul li:hover a {
-    color: var(--vang);
-    border-bottom: 2px solid var(--vang);
+nav li:hover a{
+    color: yellow;
+    border-bottom: 2px solid yellow;
 }
-
 .welcome {
     position: absolute;
-    top: 50%;
+    top: 46%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-46%, -50%);
     text-align: center;
 }
-
+.welcome h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+}
 .welcome h1 {
     font-weight: bold;
     font-size: 100px;
@@ -69,7 +82,6 @@ nav ul li:hover a {
     position: relative;
     padding: 15px 0;
 }
-
 .welcome h1::before {
     content: '';
     position: absolute;
@@ -80,72 +92,46 @@ nav ul li:hover a {
     left: 50%;
     transform: translateX(-50%);
 }
-
-.welcome button {
-    padding: 15px 25px;
-    border: 4px solid white;
-    background: transparent;
-    font-size: 15px;
-}
-
-.welcome h1 span {
-    display: block;
-}
-
-.welcome h2 {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 40px;
-}
-.intro {
+.intro{
     display: flex;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 0;
+    position:absolute;
+    bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
-.item {
-    width: calc(100% / 4);
-    margin: 0px 96px;
+.item{
+    margin: 0px 70px;
 }
-
 .gach-intro {
-    border-top: 5px solid var(--trang);
+    border-top: 5px solid white;
     width: 120px;
 }
 .gach-do {
-    border-top: 5px solid var(--do);
+    border-top: 5px solid red;
     width: 60px;
     position: absolute;
     opacity: 0;
 }
 .item:hover .gach-do {
     opacity: 1;
-    /* transition: 1s; */
     transition-duration: 2s;
     transition-timing-function: linear;
 }
-.story-item {
-    display: flex;
-    flex-direction: column;
+.story-item{
+    justify-content: center;
     text-align: center;
+    margin: 20px;
 }
-.story-item-1 {
-    line-height: 50px;
-}
-.story-item p {
+.story-item p{
     font-family: 'Kaushan Script', cursive;
+}
+.story-item h1{
+    font-family: 'Montserrat', sans-serif;
 }
 .gach-1 {
     background: red;
     width: 200px;
     height: 5px;
-    margin-left: 40%;
-}
-.story .bot {
-    position: absolute;
-    bottom: 2%;
-    width: 800px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    margin: 30px auto;  
 }
 img {
     display: block;
@@ -159,7 +145,7 @@ img {
 
 .team-item {
     background-color: #95e1d3;
-    margin: 200px 30px;
+    margin:30px 30px ;
 }
 
 .team-item .content {
@@ -188,15 +174,22 @@ img {
 .team-item:hover .content > div {
     opacity: 1;
 }
-.team-item .content ul {
+.team-item .content ul  {
+    background: #f1c523;
+    font-size: 30px;    
+}
+
+.team-item .content ul li a{
     color: red;
-    background: rgb(223, 219, 20);
-    font-size: 30px;
-    border: none;
+    display: block;
+    width: 100%;
 }
-.team-item:hover .content ul li {
+.team-item .content ul li a:hover{
     color: white;
+    background:red;
+
 }
+
 
 .team-item:hover .content {
     transform: translate(-10px, -10px);
@@ -245,6 +238,7 @@ img {
 }
 .service-item p {
     color: #999999;
+    margin: 10px;
 }
 .service-item h2 {
     color: #7a7a7a;
@@ -349,7 +343,7 @@ input[type='checkbox']:checked + .collapse-content {
     position: relative;
 }
 
-.sms-item i {
+.sms-item .icon {
     border: 1px solid greenyellow;
     padding: 30px;
     font-size: 60px;
@@ -374,15 +368,17 @@ input[type='checkbox']:checked + .collapse-content {
     left: -11px;
     position: absolute;
     bottom: 70px;
-    font-size: 30px;
-    font-weight: bold;
+    
+   
 }
 .muiten .phai {
     right: -11px;
     position: absolute;
     bottom: 70px;
-    font-size: 30px;
-    font-weight: bold;
+    
+}
+.phai a,.trai a{
+    color: #999999;
 }
 .gach21 {
     display: flex;
@@ -394,9 +390,9 @@ input[type='checkbox']:checked + .collapse-content {
 .icon-fas ul li {
     display: inline-block;
 }
-.logo {
-    background: #f8f8f8;
+.logo1 {
     display: flex;
+    background: #f5f5f5;
 }
 .logo-item {
     width: calc(100% / 6);
@@ -422,8 +418,9 @@ input[type='checkbox']:checked + .collapse-content {
 .people {
     background-image: linear-gradient(0deg, rgba(241, 241, 241, 0.86), rgba(241, 241, 241, 0.86)),
         url(../img/banner2.png);
-    height: 500px;
-    background-size: cover;
+        height: 620px;
+        background-size: cover;
+        background-position: center;    
 }
 .people-item {
     float: left;
@@ -440,9 +437,9 @@ input[type='checkbox']:checked + .collapse-content {
 }
 .people-item .gach2 {
     width: 100px;
-    height: 5px;
+    height: 2px;
     background: red;
-    margin: 0px 126px;
+    margin: 10px 129px;
 }
 .latest {
     clear: both;
@@ -489,7 +486,7 @@ input[type='checkbox']:checked + .collapse-content {
     align-items: center;
     flex-direction: column;
     color: red;
-    line-height: 40px;
+    background-position: center;
 }
 .map i {
     color: red;
@@ -544,11 +541,14 @@ input[type='checkbox']:checked + .collapse-content {
     display: flex;
     margin: 6px 0px;
 }
+.list{
+    display: flex;
+    /* width: calc(100%/3); */
+    flex-wrap: wrap;
+}
 
 .list-item {
-    width: calc(100% / 3);
-    float: left;
-    padding: 4px;
+    padding: 1px;
 }
 
 .end p {

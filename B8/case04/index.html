@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+
+        input[type=submit] {
+          width: 200px;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          outline: none;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        div {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+        .massage{
+            height: 300px;
+        }
+       
+        </style>
+</head>
+<body>
+    <div>
+        <form action="#">
+          <label for="fname">Full name</label>
+          <input type="text" id="fname" name="firstname" >
+      
+          <label for="lname">Email</label>
+          <input type="text" id="lname" name="lastname">
+
+          <label for="lname">Phone</label>
+          <input type="text" id="lname" name="lastname">
+      
+          <label for="country">Job</label>
+          <select id="country" name="country">
+            <option value="australia">Học sinh</option>
+            <option value="canada">Sinh Viên</option>
+            <option value="usa">Giao Viên</option>
+          </select>
+
+          <label for="lname">Massage</label>
+          <input class="massage" type="text" id="lname" name="lastname">
+        
+          <input type="submit" value="SEND CONTACT">
+          <input style="background: red;" type="submit" value="DELETE LOCAL">
+        </form>
+
+        <script>
+            const names = localStorage.getItem('names'); 
+        </script>
+</body>
+</html>
